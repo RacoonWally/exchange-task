@@ -1,0 +1,81 @@
+.progressBarRoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    font-size: 32px;
+    width: 100%;
+    border-bottom: 1px solid $Grey01;
+    padding-bottom: 8px;
+    background: white;
+}
+
+.input {
+    font-family:  $font-primary;;
+    font-size: 32px;
+    font-weight: 600;
+    color: $Black01;
+
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    text-align: left;
+    outline: none;
+}
+
+.hiddenSpan {
+    font-family:  $font-primary;;
+    font-size: 32px;
+    font-weight: 600;
+
+    left: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.currency {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 32px;
+
+    position: absolute;
+    color: $Blue01;
+}
+
+.buttons {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.button {
+    font-family: $font-primary;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+
+    padding: 5px 0;
+
+    border: 1px solid $Grey01;
+    background-color: white;
+    color: $Grey02;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active {
+        background-color: $Blue01;
+        border-color: $Blue01;
+        color: white;
+    }
+}

@@ -1,0 +1,11 @@
+.currencyCalculator {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+
+    @media (max-width: $desktop-size) {
+        flex-direction: column;
+        gap: 43px;
+    }
+}
